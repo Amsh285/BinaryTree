@@ -12,7 +12,7 @@ class BinaryTree
         void insert(int);
         void deleteTree();
 
-        void printInorder();
+        void treecheck();
         int getMax();
         int getMin();
         float getAvg();
@@ -32,6 +32,8 @@ class BinaryTree
         Node* goLeft(Node*);    // get min
         int calcSum(Node*);     // get sum
         int count(Node*);       // get count
+        int height(Node*);      // get height
+        int balFac(Node*);      // get balance factor
 
 
 };

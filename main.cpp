@@ -26,12 +26,7 @@ int main()
         tree.insert(value);
     }
 
-
-    tree.printInorder();
-
-    std::cout << "   max: " << tree.getMax();
-    std::cout << "   min: " << tree.getMin();
-    std::cout << "   avg: " << tree.getAvg();
+    tree.treecheck();
     file.close();
     return 0;
 }
