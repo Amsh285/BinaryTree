@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1587140305 source:c:\users\taha\documents\github\binarytree\src\binarytree.cpp
+	"BinaryTree.h"
+	<iostream>
+
+1587142409 c:\users\taha\documents\github\binarytree\include\binarytree.h
+	"Node.h"
+
+1587132947 c:\users\taha\documents\github\binarytree\include\node.h
+
+1587141208 source:c:\users\taha\documents\github\binarytree\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"BinaryTree.h"
+

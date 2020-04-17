@@ -1,9 +1,37 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
-using namespace std;
+#include "BinaryTree.h"
+
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
+    std::string filename;
+    std::cout << "enter filename: ";
+    std::getline(std::cin, filename);
+
+    std::ifstream file(filename);
+
+    if(file.fail()){
+        std::cout << "file not found";
+        return 1;
+    }
+
+    BinaryTree tree;
+    int value = 0;
+
+    while(file >> value){
+        tree.insert(value);
+    }
+
+
+    tree.printInorder();
+
+    std::cout << "   max: " << tree.getMax();
+    std::cout << "   min: " << tree.getMin();
+    std::cout << "   avg: " << tree.getAvg();
+    file.close();
     return 0;
 }
